@@ -16,7 +16,7 @@ class ceilTCPFactory(Factory):
       d.factory = self
       return d
 
-def main():# Listen for TCP:3502
+def main():# Listen for TCP:4002
    log.startLogging(stdout)
 
    reactor.listenTCP(4002, ceilTCPFactory())
